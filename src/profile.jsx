@@ -19,7 +19,7 @@ class Profile extends Component {
           <div className="profile-followers">{artist.followers.total} Followers</div>
           <div className="profile-genres">
             {
-              artists.genres.map((genre, index) => {
+              artist.genres.map((genre, index) => {
                 genre = genre !== artist.genres[artist.genre.length - 1]
                   ? ` ${genre},`
                   : ` & ${genre}`
